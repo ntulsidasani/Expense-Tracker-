@@ -1,0 +1,59 @@
+body{
+    font-family: Georgia, serif;
+    
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+form input, form button {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+}
+    
+
+form button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: px;
+  cursor: pointer;
+  text-align: center;
+  color:black;
+  background-color:rgb(181, 132, 148);
+  border: black;
+  
+  
+}
+form button:hover{
+    background-color: rgb(255, 0, 255);
+}
+.expense_list table{
+    width: 100%;
+    border-collapse:collapse ;
+    margin-bottom: 10px;
+}
+.expense_list th , .expense_list td{
+    text-align:center;
+    border:1px solid;
+    padding: 10px;
+
+}
+.expense_list th{
+    background-color: aquamarine;
+
+}
+.total-amount{
+    text-align: right;
+    font-size: medium;
+}

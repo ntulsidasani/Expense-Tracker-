@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />  
+        <title>EXPENSE TRACKER</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+    </head>
+
+    <body>
+        <div class="container">
+        <h1 style="text-align: center;">EXPENSE TRACKER</h1>
+        <form id="expense-form">
+            <div class="expensename">
+            <label for="expense name">Expense Name</label>
+            <input type="text" id="expense-name" placeholder="Type the name of expense">
+            </div>
+            <div class="amount">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Type the amount">
+            </div>
+            <div class="date">
+                <label for="date">Date</label>
+                <input type="date" id="date">
+                
+            </div>
+            <button type="submit">Add Expense</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Expense Name</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="expense_list"></tbody>
+        </table>
+        <div class="total-amount">
+            <strong>TOTAL:$<span id = "total-amount">0</span></strong>
+        </div>
+        <h2>Daily Spendings</h2>
+        <canvas id="bar"></canvas>
+    </div>
+    <script src="javascript.js"></script>
+    </body>
+</html>
